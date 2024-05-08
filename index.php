@@ -4,8 +4,13 @@
 <title>AJAX-enabled File Uploader Demos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- font-awesome -->
 <link rel="stylesheet" href="./css/fontawesome.min.css">
+<link rel="stylesheet" href="./css/solid.min.css">
+<link rel="stylesheet" href="./css/v4-shims.min.css">
+<!-- uploader -->
 <link rel="stylesheet" href="./css/jquery.uploader.css">
+
 <style rel="stylesheet">
 html,* { 
     font-family: 'Inter'; box-sizing: border-box; 
@@ -69,6 +74,16 @@ body {
       },
     },
   })
+
+
+  $("#demo3").on("file-remove", function(file, data) {
+    console.log(file);
+    console.log(data);
+  })
+
+
+
+
 </script>
 </body>
 </html>
